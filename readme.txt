@@ -1,4 +1,4 @@
-=== Fix Media MIME Types (WP-CLI only) ===
+=== Fix Media MIME Types (CLI only) ===
 Contributors: javiercasares
 Tags: media, mime-type, wp-cli
 Requires at least: 6.4
@@ -13,15 +13,33 @@ Fixes incorrect MIME types in the Media Library using WP-CLI.
 
 == Description ==
 
-This plugin integrates with the WPVulnerability API to provide real-time vulnerability assessments for your WordPress core, plugins, themes, PHP version, Apache HTTPD, nginx, MariaDB, MySQL, ImageMagick, curl, memcached, Redis, and SQLite.
+Fix Media MIME Types (CLI only) is a lightweight and efficient plugin that identifies and corrects any **incorrect MIME types** in your WordPress Media Library. 
 
-It delivers detailed reports directly within your WordPress dashboard, helping you stay aware of potential security risks. Configure the plugin to send periodic notifications about your site's security status, ensuring you remain informed without being overwhelmed. Designed for ease of use, it supports proactive security measures without storing or retrieving any personal data from your site.
+**Key Features**:
+* Scans your entire Media Library for potential MIME discrepancies.
+* Uses PHP's `FileInfo` to detect the correct MIME type of media files.
+* Updates the WordPress database only when a mismatch is found, ensuring minimal overhead.
+* Designed solely for command-line usage (WP-CLI), with no impact on normal site visitors or admins.
+  
+This plugin is **not** visible in the standard WordPress interface (it is WP-CLI only). To use it, you must have [WP-CLI](https://wp-cli.org/) installed on your server or local environment.
 
 = WP-CLI =
 
-You can use the following WP-CLI commands to manage and check vulnerabilities:
+You can use the following WP-CLI commands:
 
-* Core: `wp wpvulnerability core`
+* `wp fix-mime run`
+
+That will show something like:
+
+```
+Found 3 attachments. Starting the process...
+Warning: Attachment ID 1: file does not exist on disk. Skipping...
+Attachment ID 2, File: example1.webp, Current MIME: image/webp, Detected MIME: image/webp
+No changes needed.
+Attachment ID 3, File: example2.webp, Current MIME: image/png, Detected MIME: image/webp
+No changes needed.
+Success: Process complete. All MIME types have been verified/updated.
+```
 
 == Installation ==
 
