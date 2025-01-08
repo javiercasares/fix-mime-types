@@ -1,0 +1,74 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fix Media MIME Types (CLI only)\n"
+"POT-Creation-Date: 2025-01-08 09:43+0100\n"
+"PO-Revision-Date: 2025-01-08 09:43+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: fix-mime-types.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: class-fix-mime-types-command.php:41
+msgid "No attachments found in the Media Library."
+msgstr ""
+
+#. translators: %d: Number of attachments found.
+#: class-fix-mime-types-command.php:48
+#, php-format
+msgid "Found %d attachments. Starting the process..."
+msgstr ""
+
+#. translators: %d: Attachment ID.
+#: class-fix-mime-types-command.php:67
+#, php-format
+msgid "Attachment ID %d: file does not exist on disk. Skipping..."
+msgstr ""
+
+#. translators: 1: Attachment ID, 2: file name, 3: current MIME, 4: detected MIME.
+#: class-fix-mime-types-command.php:83
+#, php-format
+msgid "Attachment ID %1$d, File: %2$s, Current MIME: %3$s, Detected MIME: %4$s"
+msgstr ""
+
+#. translators: 1: old MIME type, 2: new MIME type.
+#: class-fix-mime-types-command.php:103
+#, php-format
+msgid "MIME updated from \"%1$s\" to \"%2$s\"."
+msgstr ""
+
+#: class-fix-mime-types-command.php:109
+msgid "No changes needed."
+msgstr ""
+
+#: class-fix-mime-types-command.php:113
+msgid "Process complete. All MIME types have been verified/updated."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Fix Media MIME Types (CLI only)"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Fixes incorrect MIME types in the Media Library using WP-CLI."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Javier Casares"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.javiercasares.com/"
+msgstr ""
