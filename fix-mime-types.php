@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Fix Media MIME Types (WP-CLI only)
+ * Plugin Name: Fix Media MIME Types (CLI only)
  * Description: Fixes incorrect MIME types in the Media Library using WP-CLI.
  * Requires at least: 6.4
  * Requires PHP: 8.2
- * Version: 1.0
+ * Version: 1.0.0
  * Author: Javier Casares
  * Author URI: https://www.javiercasares.com/
  * License: GPL-3.0-or-later
